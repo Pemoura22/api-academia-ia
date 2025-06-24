@@ -1,0 +1,49 @@
+# Ambiente Virtual
+venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Banco de Dados (se for um arquivo SQLite local)
+*.sqlite
+*.db
+*.db-journal
+
+# Logs e Dados Gerados
+logs/
+*.log
+*.log.*
+
+# Modelos de Machine Learning salvos
+churn_model.joblib
+
+# RabbitMQ (arquivos de dados, se houver um diretório de dados local)
+# Certifique-se de que estes não são os arquivos de instalação, mas sim os dados gerados
+# Por padrão, RabbitMQ instala como um serviço e os dados ficam em um local padrão do sistema
+# Geralmente não precisa ignorar pastas do RabbitMQ aqui, a menos que você tenha configurado
+# um diretório de dados personalizado dentro do projeto.
+
+# IDEs
+.vscode/
+.idea/
+
+# Arquivos de sistema e temporários
+.DS_Store
+Thumbs.db
+*.tmp
+*~
+
+# Arquivos de cache de dependências
+pip-selfcheck.json
